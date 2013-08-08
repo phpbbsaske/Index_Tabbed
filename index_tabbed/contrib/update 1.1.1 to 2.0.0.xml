@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Index Tabbed]]></title>
+		<description lang="en"><![CDATA[Index ~ Who is online, Birthdays, Statistics, icons, login in tab mode
+Forum ~ Who is online, forum permission, Icons, login in tab mode
+Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></description>
+		<author-notes lang="en"><![CDATA[New style code based of proDVGFX.]]></author-notes>
+		<author-group>
+			<author>
+				<realname><![CDATA[Salva]]></realname>
+				<username><![CDATA[Saske1]]></username>
+				<homepage><![CDATA[http://www.phpbbsaske.com/foro/index.php]]></homepage>
+				<email><![CDATA[salva_bxt@hotmail.com]]></email>
+			</author>
+			<author>
+				<realname><![CDATA[Gabriel]]></realname>
+				<username><![CDATA[leviatan21]]></username>
+				<homepage><![CDATA[http://www.mssti.com/phpbb3/index.php]]></homepage>
+				<contributions-group>
+					<contributions status="current" from="2011-05-11" to="2011-07-03" position="Devolper"/>
+				</contributions-group>
+			</author>
+			<author>
+				<realname><![CDATA[Sergio]]></realname>
+				<username><![CDATA[leonidas]]></username>
+				<email><![CDATA[leonidas7oficial@hotmail.com]]></email>
+				<contributions-group>
+					<contributions status="current" position="Desinger"/>
+				</contributions-group>
+			</author>
+		</author-group>
+		<mod-version>2.0.0</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>300</time>
+			<target-version>3.0.10</target-version>
+		</installation>
+		<history>
+			<entry>
+				<date>2011-04-10</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Initial release]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-04-13</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Fixed errors]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-05-11</date>
+				<rev-version>1.1.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Code change]]></change>
+					<change><![CDATA[better and less code]]></change>
+					<change><![CDATA[Enable / Disable in the ACP]]></change>
+					<change><![CDATA[Name Change]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-07-03</date>
+				<rev-version>1.1.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Add mode tab in viewforum]]></change>
+					<change><![CDATA[Add option in ACP for enable / disable mode tab in viewforum]]></change>
+					<change><![CDATA[Add mode tab in viewtopic]]></change>
+					<change><![CDATA[Add option in ACP for enable / disable mode tab in viewtopic]]></change>
+					<change><![CDATA[Support 3.0.9 phpBB]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-07-31</date>
+				<rev-version>2.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[New Style for the MOD]]></change>
+					<change><![CDATA[Bug Fixeds]]></change>
+					<change><![CDATA[Best Code]]></change>
+					<change><![CDATA[Use Jquery 1.7.2]]></change>
+				</changelog>
+			</entry>
+		</history>
+		<link-group>
+			<link type="parent" href="../install.xml" lang="en">Installation Instructions</link>
+		</link-group>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/styles/prosilver/template/index_tabbed.html" to="styles/prosilver/template/index_tabbed.html"/>
+			<file from="root/styles/prosilver/template/index_tabbed_classic.html" to="styles/prosilver/template/index_tabbed_classic.html"/>
+			<file from="root/styles/prosilver/template/index_tabbed_modern.html" to="styles/prosilver/template/index_tabbed_modern.html"/>
+			<file from="root/styles/prosilver/template/viewforum_tabbed.html" to="styles/prosilver/template/viewforum_tabbed.html"/>
+			<file from="root/styles/prosilver/template/viewforum_tabbed_classic.html" to="styles/prosilver/template/viewforum_tabbed_classic.html"/>
+			<file from="root/styles/prosilver/template/viewforum_tabbed_modern.html" to="styles/prosilver/template/viewforum_tabbed_modern.html"/>
+			<file from="root/styles/prosilver/template/viewtopic_tabbed.html" to="styles/prosilver/template/viewtopic_tabbed.html"/>
+			<file from="root/styles/prosilver/template/viewtopic_tabbed_classic.html" to="styles/prosilver/template/viewtopic_tabbed_classic.html"/>
+			<file from="root/styles/prosilver/template/viewtopic_tabbed_modern.html" to="styles/prosilver/template/viewtopic_tabbed_modern.html"/>
+			<file from="root/styles/prosilver/theme/tabs.css" to="styles/prosilver/theme/tabs.css"/>
+			<file from="root/styles/prosilver/theme/images/bg_tabs3.png" to="styles/prosilver/theme/images/bg_tabs3.png"/>
+			<file from="root/styles/prosilver/theme/images/bg_tabs3b.png" to="styles/prosilver/theme/images/bg_tabs3b.png"/>
+			<file from="root/styles/prosilver/theme/images/bg_tabs3t.png" to="styles/prosilver/theme/images/bg_tabs3t.png"/>
+		</copy>
+		<open src="index.php">
+			<edit>
+				<find><![CDATA[// MOD : Index Tabbed - Start
+		'FORUM_IMG'             => $user->img('forum_read', 'NO_UNREAD_POSTS'),
+		'FORUM_NEW_IMG'         => $user->img('forum_unread', 'NEW_POSTS'),
+		'FORUM_UNREAD_IMG'          => $user->img('forum_unread', 'UNREAD_POSTS'),
+		'FORUM_LOCKED_IMG'      => $user->img('forum_read_locked', 'NO_UNREAD_POSTS_LOCKED'),
+		'FORUM_NEW_LOCKED_IMG'  => $user->img('forum_unread_locked', 'NO_NEW_POSTS_LOCKED'),
+		'FORUM_UNREAD_LOCKED_IMG'   => $user->img('forum_unread_locked', 'UNREAD_POSTS_LOCKED'),
+		'FORUM_LINK_IMG'      => $user->img('forum_link', 'FORUM_LINK'),
+		'FORUM_NEW_SUBFORUM_IMG' => $user->img('forum_read_subforum', 'NO_NEW_POSTS'),
+		'FORUM_SUBFORUM_IMG'   => $user->img('forum_unread_subforum', 'NEW_POSTS'),
+// MOD : Index Tabbed - END]]></find>
+				<action type="replace-with"><![CDATA[// MOD : Index Tabbed - Start
+		'FORUM_IMG'             => $user->img('forum_read', 'NO_UNREAD_POSTS'),
+		'FORUM_NEW_IMG'         => $user->img('forum_unread', 'NEW_POSTS'),
+		'FORUM_UNREAD_IMG'          => $user->img('forum_unread', 'UNREAD_POSTS'),
+		'FORUM_LOCKED_IMG'      => $user->img('forum_read_locked', 'NO_UNREAD_POSTS_LOCKED'),
+		'FORUM_NEW_LOCKED_IMG'  => $user->img('forum_unread_locked', 'NO_NEW_POSTS_LOCKED'),
+		'FORUM_UNREAD_LOCKED_IMG'   => $user->img('forum_unread_locked', 'UNREAD_POSTS_LOCKED'),
+		'FORUM_LINK_IMG'      => $user->img('forum_link', 'FORUM_LINK'),
+		'FORUM_NEW_SUBFORUM_IMG' => $user->img('forum_read_subforum', 'NO_NEW_POSTS'),
+		'FORUM_SUBFORUM_IMG'   => $user->img('forum_unread_subforum', 'NEW_POSTS'),
+
+		'S_LOGIN_ACTION'			=> append_sid("{$phpbb_root_path}ucp.$phpEx", 'mode=login'),
+		'S_DISPLAY_BIRTHDAY_LIST'	=> ($config['load_birthdays']) ? true : false,
+
+		'S_INDEXTABS'				=> (isset($config['load_indextabs'])) ? $config['load_indextabs'] : false,
+		'S_MODETABS'				=> (isset($config['load_modetabs'])) ? $config['load_modetabs'] : false,
+// MOD : Index Tabbed - END]]></action>
+				<remove><![CDATA[// MOD : Index Tabbed - Start
+		'S_INDEXTABS'				=> (isset($config['load_indextabs'])) ? $config['load_indextabs'] : false,
+// MOD : Index Tabbed - END]]></remove>
+			</edit>
+		</open>
+		<open src="viewforum.php">
+			<edit>
+				<find><![CDATA[// MOD : Index Tabbed - Start
+	'S_MODETABS'				=> (isset($config['load_modetabs'])) ? $config['load_modetabs'] : false,
+// MOD : Index Tabbed - END]]></find>
+				<action type="after-add"><![CDATA[// MOD : Index Tabbed - Start
+	'S_FORUMTABS'				=> (isset($config['load_forumtabs'])) ? $config['load_forumtabs'] : false,
+	'S_MODETABS'				=> (isset($config['load_modetabs'])) ? $config['load_modetabs'] : false,
+// MOD : Index Tabbed - END]]></action>
+			</edit>
+		</open>
+		<open src="viewtopic.php">
+			<edit>
+				<find><![CDATA[// MOD : Index Tabbed - Start
+	'FOLDER_IMG'				=> $user->img('topic_read', 'NO_UNREAD_POSTS'),
+	'FOLDER_UNREAD_IMG'			=> $user->img('topic_unread', 'UNREAD_POSTS'),
+	'FOLDER_HOT_IMG'			=> $user->img('topic_read_hot', 'NO_UNREAD_POSTS_HOT'),
+	'FOLDER_HOT_UNREAD_IMG'		=> $user->img('topic_unread_hot', 'UNREAD_POSTS_HOT'),
+	'FOLDER_LOCKED_IMG'			=> $user->img('topic_read_locked', 'NO_UNREAD_POSTS_LOCKED'),
+	'FOLDER_LOCKED_UNREAD_IMG'	=> $user->img('topic_unread_locked', 'UNREAD_POSTS_LOCKED'),
+	'FOLDER_STICKY_IMG'			=> $user->img('sticky_read', 'POST_STICKY'),
+	'FOLDER_STICKY_UNREAD_IMG'	=> $user->img('sticky_unread', 'POST_STICKY'),
+	'FOLDER_ANNOUNCE_IMG'		=> $user->img('announce_read', 'POST_ANNOUNCEMENT'),
+	'FOLDER_ANNOUNCE_UNREAD_IMG'=> $user->img('announce_unread', 'POST_ANNOUNCEMENT'),
+	'FOLDER_MOVED_IMG'			=> $user->img('topic_moved', 'TOPIC_MOVED'),
+// MOD : Index Tabbed - END]]></find>
+				<action type="replace-with"><![CDATA[// MOD : Index Tabbed - Start
+	'FORUM_IMG'             => $user->img('forum_read', 'NO_UNREAD_POSTS'),
+	'FORUM_NEW_IMG'         => $user->img('forum_unread', 'NEW_POSTS'),
+	'FORUM_UNREAD_IMG'          => $user->img('forum_unread', 'UNREAD_POSTS'),
+	'FORUM_LOCKED_IMG'      => $user->img('forum_read_locked', 'NO_UNREAD_POSTS_LOCKED'),
+	'FORUM_NEW_LOCKED_IMG'  => $user->img('forum_unread_locked', 'NO_NEW_POSTS_LOCKED'),
+	'FORUM_UNREAD_LOCKED_IMG'   => $user->img('forum_unread_locked', 'UNREAD_POSTS_LOCKED'),
+	'FORUM_LINK_IMG'      => $user->img('forum_link', 'FORUM_LINK'),
+	'FORUM_NEW_SUBFORUM_IMG' => $user->img('forum_read_subforum', 'NO_NEW_POSTS'),
+	'FORUM_SUBFORUM_IMG'   => $user->img('forum_unread_subforum', 'NEW_POSTS'),
+// MOD : Index Tabbed - END]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[// MOD : Index Tabbed - Start
+	'S_TOPICTABS'				=> (isset($config['load_topictabs'])) ? $config['load_topictabs'] : false,
+// MOD : Index Tabbed - END]]></find>
+				<action type="replace-with"><![CDATA[// MOD : Index Tabbed - Start
+	'S_TOPICTABS'				=> (isset($config['load_topictabs'])) ? $config['load_topictabs'] : false,
+	'S_MODETABS'				=> (isset($config['load_modetabs'])) ? $config['load_modetabs'] : false,
+// MOD : Index Tabbed - END]]></action>
+			</edit>
+		</open>
+		<open src="includes/acp/acp_board.php">
+			<edit>
+				<find><![CDATA[// MOD : Index Tabbed - Start
+						'load_indextabs'		=> array('lang' => 'YES_INDEXTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+						'load_forumtabs'		=> array('lang' => 'YES_FORUMTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+						'load_topictabs'		=> array('lang' => 'YES_TOPICTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+						'load_modetabs'			=> array('lang' => 'YES_MODETABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+// MOD : Index Tabbed - End]]></find>
+				<action type="replace-with"><![CDATA[// MOD : Index Tabbed - Start
+						'load_indextabs'		=> array('lang' => 'YES_INDEXTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+						'load_forumtabs'		=> array('lang' => 'YES_FORUMTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+						'load_topictabs'		=> array('lang' => 'YES_TOPICTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+						'load_modetabs'			=> array('lang' => 'YES_MODETABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
+// MOD : Index Tabbed - End]]></action>
+			</edit>
+		</open>
+		<open src="language/en/acp/board.php">
+			<edit>
+				<find><![CDATA[// MOD : Index Tabbed - Start
+	'YES_INDEXTABS'					=> 'Enable tabs in index', 
+	'YES_INDEXTABS_EXPLAIN'			=> 'Show “Who is Online”, “Birthday”, “Statistics” and "icons" in tabs or in the mode set by the style',
+	'YES_FORUMTABS'					=> 'Enable tabs in forums', 
+	'YES_FORUMTABS_EXPLAIN'			=> 'Show “Who is Online”, “permission” and “icons” in tabs or in the mode set by the style',
+	'YES_TOPICTABS'					=> 'Enable tabs in topics', 
+	'YES_TOPICTABS_EXPLAIN'			=> 'Show “Who is Online”, “permission” and “icons” in tabs or in the mode set by the style',
+// MOD : Index Tabbed - End]]></find>
+				<action type="replace-with"><![CDATA[// MOD : Index Tabbed - Start
+	'YES_INDEXTABS'					=> 'Enable tabs in index', 
+	'YES_INDEXTABS_EXPLAIN'			=> 'Show â€œWho is Onlineâ€, â€œBirthdayâ€, â€œStatisticsâ€ and "icons" in tabs or in the mode set by the style',
+	'YES_FORUMTABS'					=> 'Enable tabs in forums', 
+	'YES_FORUMTABS_EXPLAIN'			=> 'Show â€œWho is Onlineâ€, â€œpermissionâ€ and â€œiconsâ€ in tabs or in the mode set by the style',
+	'YES_TOPICTABS'					=> 'Enable tabs in topics', 
+	'YES_TOPICTABS_EXPLAIN'			=> 'Show â€œWho is Onlineâ€, â€œpermissionâ€ and â€œiconsâ€ in tabs or in the mode set by the style',
+	'YES_MODETABS'					=> 'Select the style', 
+	'YES_MODETABS_EXPLAIN'					=> 'If enabled, will show the Modern style, if you disable display the Classic style', 
+// MOD : Index Tabbed - End]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_header.html">
+			<edit>
+				<find><![CDATA[</head>]]></find>
+				<action type="before-add"><![CDATA[script type="text/javascript" src="{T_SUPER_TEMPLATE_PATH}/jquery.min.js"></script>]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/stylesheet.css">
+			<edit>
+				<find><![CDATA[@import url("colours.css");]]></find>
+				<action type="after-add"><![CDATA[@import url("tabs.css");]]></action>
+			</edit>
+		</open>
+		<diy-instructions lang="en"><![CDATA[IMPORTANT ! 
+
+#####################################################################
+Log on to Administration Control Panel
+
+#####################################################################
+A) Refresh the templates :
+
+	A.1) Navigate to "Styles" Tab.
+	A.2) Under "Style components " click on "Templates".
+	A.3) Under "Actions" click on "Refresh".
+	A.4) in the next screen, click on "Yes" ( Repeat last 2 steps to each instaled style ).
+
+#####################################################################
+B) Refresh the themes :
+
+	B.1) Navigate to "Styles" Tab.
+	B.2) Under "Style components " click on "Themes".
+	B.3) Under "Actions" click on "Refresh".
+	B.4) in the next screen, click on "Yes" ( Repeat last 2 steps to each instaled style ).
+
+#####################################################################
+C) Enjoy it !.]]></diy-instructions>
+		<diy-instructions lang="es"><![CDATA[IMPORTANTE ! 
+
+#####################################################################
+Identificarse en el Panel de control del Administrador
+
+#####################################################################
+A) Actualizar las Plantillas :
+
+	A.1) Navegue hasta la solapa "ESTILOS"
+	A.2) Debajo de "COMPONENTES DE ESTILO" hacer click en "Plantillas".
+	A.3) En "Acciones" hacer click en "Actualizar".
+	A.4) En la siguente pantalla, haga click en "SI" ( Repita los 2 últimos pasos para cada estilo Instalado ).
+
+#####################################################################
+B) Actualizar el Estilo
+
+	B.1) Navegue hasta la solapa "ESTILOS"
+	B.2) Debajo de "COMPONENTES DE ESTILO" hacer click en "Estilos".
+	B.3) En "Acciones" hacer click en "Actualizar".
+	B.4) En la siguente pantalla, haga click en "SI" ( Repita los 2 Ãºltimos pasos para cada estilo Instalado ).
+
+#####################################################################
+C) Disfruten !.]]></diy-instructions>
+	</action-group>
+</mod>
