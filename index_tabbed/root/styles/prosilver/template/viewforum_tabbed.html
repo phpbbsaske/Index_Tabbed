@@ -94,7 +94,7 @@ function subpanels_forum(p)
 	<div class="panel-tabbed-heading">
 		<!-- IF U_VIEWONLINE --><h5 class="panel-tabbed-title"><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h5><!-- ELSE --><h5 class="panel-tabbed-title">{L_WHO_IS_ONLINE}</h5><!-- ENDIF -->
 	</div>
-		<p>{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> <br />{LOGGED_IN_USER_LIST}
+		<p style="margin-left: 10px; margin-top: 10px;">{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> <br />{LOGGED_IN_USER_LIST}
 		<!-- IF LEGEND --><br /><em>{L_LEGEND}: {LEGEND}</em><!-- ENDIF --></p>
 	</div>
 	<!-- ENDIF -->
@@ -105,7 +105,7 @@ function subpanels_forum(p)
 	<div class="panel-tabbed-heading">
 	<h5 class="panel-tabbed-title">{L_FORUM_PERMISSIONS}</h5>
 	</div>
-	<p><!-- BEGIN rules -->{rules.RULE}<br /><!-- END rules --></p>
+	<p style="margin-left: 10px; margin-top: 10px;"><!-- BEGIN rules -->{rules.RULE}<br /><!-- END rules --></p>
 	</div>
 	<!-- ENDIF -->
    <!-- IF S_DISPLAY_POST_INFO -->

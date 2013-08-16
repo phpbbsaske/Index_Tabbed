@@ -94,7 +94,7 @@ function subpanels_index(p)
 	<div class="panel-tabbed-heading">
 		<!-- IF U_VIEWONLINE --><h5 class="panel-tabbed-title"><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h5><!-- ELSE --><h5 class="panel-tabbed-title">{L_WHO_IS_ONLINE}</h5><!-- ENDIF -->
 	</div>
-		<p>{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> <br />{LOGGED_IN_USER_LIST}
+		<p style="margin-left: 10px; margin-top: 10px;" >{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> <br />{LOGGED_IN_USER_LIST}
 		<!-- IF LEGEND --><br /><em>{L_LEGEND}: {LEGEND}</em><!-- ENDIF --></p>
 	</div>
 	<!-- ENDIF -->
@@ -104,7 +104,7 @@ function subpanels_index(p)
 	<div class="panel-tabbed-heading">
 		<h5 class="panel-tabbed-title">{L_BIRTHDAYS}</h5>
 	</div>
-		<p><!-- IF BIRTHDAY_LIST -->{L_CONGRATULATIONS}: <strong>{BIRTHDAY_LIST}</strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF --></p>
+		<p style="margin-left: 10px; margin-top: 10px;"><!-- IF BIRTHDAY_LIST -->{L_CONGRATULATIONS}: <strong>{BIRTHDAY_LIST}</strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF --></p>
 	</div>
 	<!-- ENDIF -->
 
@@ -113,7 +113,7 @@ function subpanels_index(p)
 		<div class="panel-tabbed-heading">
 			<h5 class="panel-tabbed-title">{L_STATISTICS}</h5>
 		</div>
-		<p>{TOTAL_POSTS} &bull; {TOTAL_TOPICS} &bull; {TOTAL_USERS} &bull; {NEWEST_USER}</p>
+		<p style="margin-left: 10px; margin-top: 10px;">{TOTAL_POSTS} &bull; {TOTAL_TOPICS} &bull; {TOTAL_USERS} &bull; {NEWEST_USER}</p>
 	</div>
 	<!-- ENDIF -->
 	
