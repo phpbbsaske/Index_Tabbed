@@ -91,8 +91,6 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 		<link-group>
 			<link type="language" href="contrib/es.xml" lang="en">Install Spanish language pack</link>
 			<link type="language" href="contrib/es.xml" lang="es">Instalar paquete del idioma español</link>
-			<link type="contrib" href="contrib/update 2.0.0 to 3.0.0.xml" lang="en">Update 2.0.0 to 3.0.0</link>
-			<link type="contrib" href="contrib/update 2.0.0 to 3.0.0.xml" lang="es">Actualizar 2.0.0 a 3.0.0</link>
 		</link-group>
 	</header>
 	<action-group>
