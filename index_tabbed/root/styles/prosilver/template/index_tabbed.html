@@ -2,8 +2,8 @@
 // <![CDATA[
 /**
 @package Index Tabbed
-@version 2.0.0
-@copyright (c) zoby (http://www.phpbb-es.com/foro/usuario/zoby/)
+@version 3.0.0
+@copyright (c) Saske (http://www.phpbbsaske.es)
 @copyright (c) leviatan21 (http://www.phpbb-es.com/foro/usuario/leviatan21/)
 @license http://opensource.org/licenses/gpl-license.php GNU Public License
 **/
@@ -38,7 +38,7 @@ function subpanels_index(p)
 				e.style.display = 'block';
 				if (t)
 				{
-					t.className = 'activetab';
+					t.className = 'active';
 				}
 			}
 			else
@@ -57,15 +57,15 @@ function subpanels_index(p)
 </script>
 
 <div id="tabs">
-	<ul>
+	<ul class="nav nav-tabs">
 		<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
-		<li class="<!-- IF not S_USER_LOGGED_IN -->activetab<!-- ELSE --><!-- ENDIF -->" id="login-panel-tab"><a name="login" href="#login-panel-tab" onclick="subpanels_index('login-panel'); return false;"><span>{L_LOGIN}</span></a></li>
+		<li class="<!-- IF not S_USER_LOGGED_IN -->active<!-- ELSE --><!-- ENDIF -->" id="login-panel-tab"><a name="login" href="#login-panel-tab" onclick="subpanels_index('login-panel'); return false;"><span>{L_LOGIN}</span></a></li>
 		<!-- ENDIF -->
 		<!-- IF S_DISPLAY_ONLINE_LIST -->
-		<li class="<!-- IF S_USER_LOGGED_IN -->activetab<!-- ELSE --><!-- ENDIF -->" id="online-panel-tab"><a name="online" href="#online-panel-tab" onclick="subpanels_index('online-panel'); return false;"><span>{L_WHO_IS_ONLINE}</span></a></li>
+		<li class="<!-- IF S_USER_LOGGED_IN -->active<!-- ELSE --><!-- ENDIF -->" id="online-panel-tab"><a name="online" href="#online-panel-tab" onclick="subpanels_index('online-panel'); return false;"><span>{L_WHO_IS_ONLINE}</span></a></li>
 		<!-- ENDIF -->
 		<!-- IF S_DISPLAY_BIRTHDAY_LIST and BIRTHDAY_LIST -->
-		<li class="" id="birthday-panel-tab"><a name="birthday" href="#birthday-panel-tab" onclick="subpanels_index('birthday-panel'); return false;"><span>{L_BIRTHDAYS}</span></a></li>
+		<li class="" id="birthday-panel-tab"><a name="birthday" href="#birthday-panel" onclick="subpanels_index('birthday-panel'); return false;"><span>{L_BIRTHDAYS}</span></a></li>
 		<!-- ENDIF -->
 		<!-- IF NEWEST_USER -->
 		<li class="" id="statistics-panel-tab"><a name="statistics" href="#statistics-panel" onclick="subpanels_index('statistics-panel'); return false;"><span>{L_STATISTICS}</span></a></li>
