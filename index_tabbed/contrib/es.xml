@@ -105,7 +105,7 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 				<find><![CDATA[	'NO_ATTACHMENT_SELECTED'			=> 'No ha seleccionado un adjunto para descargar o ver.',
 	'NO_NEWER_TOPICS'					=> 'No hay temas nuevos en este foro',
 	'NO_OLDER_TOPICS'					=> 'No hay temas viejos en este foro',
-	'NO_UNREAD_POSTS'					=> 'No hay nuevos mensajes sin leer en este tema',
+	'NO_UNREAD_POSTS'					=> 'No hay nuevos mensajes sin leer en este tema.',
 	'NO_VOTE_OPTION'					=> 'Debe especificar una opción cuando vote.',
 	'NO_VOTES'							=> 'No hay votos',]]></find>
 				<action type="after-add"><![CDATA[// MOD : Index Tabbed - Start
@@ -116,7 +116,7 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 	'NO_NEW_POSTS_LOCKED'	=> 'No hay mensajes nuevos [ Cerrado ]',   // No usado más
 	'NO_NEWER_TOPICS'					=> 'No hay temas nuevos en este foro',
 	'NO_OLDER_TOPICS'					=> 'No hay temas viejos en este foro',
-	'NO_UNREAD_POSTS'					=> 'No hay nuevos mensajes sin leer en este tema',
+	'NO_UNREAD_POSTS'					=> 'No hay nuevos mensajes sin leer en este tema.',
 	'NO_VOTE_OPTION'					=> 'Debe especificar una opción cuando vote.',
 	'NO_VOTES'							=> 'No hay votos',
 // MOD : Index Tabbed - End]]></action>
