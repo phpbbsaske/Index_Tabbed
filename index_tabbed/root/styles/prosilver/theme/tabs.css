@@ -1,93 +1,236 @@
-.tabs {
-	float: left;
-	margin: 5px 0;
-	width: 100%;
+/* Index Tabbed CSS
+@autor	Using Bootstrap CSS from Twitter
+@autor	Saske (http://www.phpbbsaske.es)
+*/
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
-ul.tabNav {
-	background: url("{T_THEME_PATH}/images/bg_tabs3t.png") right 0 no-repeat;
-	list-style: none;
-	float: left;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	width: 100%;
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
 }
 
-ul.tabNav li {
-	background: url("{T_THEME_PATH}/images/bg_tabs3.png") left 0 no-repeat;
-	display: inline;
-	float: left;
-	height: 25px;
-	width: auto;
+.nav:after {
+  clear: both;
 }
 
-ul.tabNav li a:active,
-ul.tabNav li a:focus,
-ul.tabNav li a:link,
-ul.tabNav li a:visited {
-	background: url("{T_THEME_PATH}/images/bg_tabs3.png") center 0 no-repeat;
-	border-left: 1px solid #1F1F1F;
-	color: #CCC;
-	display: block;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	font-weight: bold;
-	line-height: 25px;
-	outline: none;
-	padding: 0 15px;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: -1px -1px 1px rgba(0,0,0,0.7);
-	text-transform: uppercase;
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
 }
 
-ul.tabNav li a.selected,
-ul.tabNav li a:hover {
-	color: #b20304;
-	text-decoration: none;
+.nav:after {
+  clear: both;
 }
 
-ul.tabNav li a.first {
-	background: url("{T_THEME_PATH}/images/bg_tabs3.png") left 0 no-repeat;
-	border-left: none;
+.nav > li {
+  position: relative;
+  display: block;
 }
 
-div.tabs > div {
-	float: left;
-	margin: 0;
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
 }
 
-div.tabs > div h3 {
-	margin-top: 10px;
-	text-transform: uppercase;
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
 }
 
-.tabBG {
-	display: block;
-	overflow: hidden;
-	padding: 0;
-	width: 100%;
+.nav > li.disabled > a {
+  color: #999999;
 }
 
-.tabBG p {
-	margin: 0;
-	padding-bottom: 5px;
-	color: #000000;
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
 }
 
-.tabBG td {
-	color: #000000;
+.nav.open > a,
+.nav.open > a:hover,
+.nav.open > a:focus {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #428bca;
 }
 
-#insidetabBG ul {}
-
-#insidetabBG ul li, #tab_button {
-	padding-top: 5px;
+.nav.open > a .caret,
+.nav.open > a:hover .caret,
+.nav.open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
-#insidetabBG {
-	background: #0697D5;
-	padding: 5px 5px 0 5px;
-	width: auto;
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: #eeeeee;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+
+.nav-tabs.nav-justified > li {
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+
+.nav-tabs.nav-justified > li > a {
+  text-align: center;
+}
+
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs.nav-justified > .active > a {
+  border-bottom-color: #ffffff;
+}
+
+.nav-pills > li {
+  float: left;
+}
+
+.nav-pills > li > a {
+  border-radius: 5px;
+}
+
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #428bca;
+}
+
+.nav-stacked > li {
+  float: none;
+}
+
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+.nav-justified {
+  width: 100%;
+}
+
+.nav-justified > li {
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+
+.nav-justified > li > a {
+  text-align: center;
+}
+
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs-justified > .active > a {
+  border-bottom-color: #ffffff;
+}
+
+.tabbable:before,
+.tabbable:after {
+  display: table;
+  content: " ";
+}
+
+.tabbable:after {
+  clear: both;
+}
+
+.tabbable:before,
+.tabbable:after {
+  display: table;
+  content: " ";
+}
+
+.tabbable:after {
+  clear: both;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.nav .caret {
+  border-top-color: #428bca;
+  border-bottom-color: #428bca;
+}
+
+.nav a:hover .caret {
+  border-top-color: #2a6496;
+  border-bottom-color: #2a6496;
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }

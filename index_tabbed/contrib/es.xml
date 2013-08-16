@@ -16,7 +16,7 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 			<author>
 				<realname><![CDATA[Salva]]></realname>
 				<username><![CDATA[Saske1]]></username>
-				<homepage><![CDATA[http://www.phpbbsaske.com/foro/index.php]]></homepage>
+				<homepage><![CDATA[http://www.phpbbsaske.es/foro/]]></homepage>
 				<email><![CDATA[salva_bxt@hotmail.com]]></email>
 			</author>
 			<author>
@@ -27,20 +27,12 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 					<contributions status="past" from="2011-05-11" to="2011-07-03" position="Devolper"/>
 				</contributions-group>
 			</author>
-			<author>
-				<realname><![CDATA[Sergio]]></realname>
-				<username phpbbcom="no"><![CDATA[leonidas]]></username>
-				<email><![CDATA[leonidas7oficial@hotmail.com]]></email>
-				<contributions-group>
-					<contributions status="current" position="Desinger"/>
-				</contributions-group>
-			</author>
 		</author-group>
-		<mod-version>2.0.0</mod-version>
+		<mod-version>3.0.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>300</time>
-			<target-version>3.0.10</target-version>
+			<target-version>3.0.12</target-version>
 		</installation>
 		<history>
 			<entry>
@@ -141,8 +133,6 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 	'YES_FORUMTABS_EXPLAIN'			=> 'Mostrar “¿Quién está conectado?”, “permisos del foro” e “iconos” en solapas o en el modo establecido por el estilo',
 	'YES_TOPICTABS'					=> 'Habilitar solapas en los temas', 
 	'YES_TOPICTABS_EXPLAIN'			=> 'Mostrar “¿Quién está conectado?”, “permisos del foro” e “iconos” en solapas o en el modo establecido por el estilo',
-	'YES_MODETABS'					=> 'Seleccionar un estilo', 
-	'YES_MODETABS_EXPLAIN'					=> 'Si se habilita, se mostrará el estilo moderno, si se deshabilita se mostrará el estilo classico', 
 // MOD : Index Tabbed - End]]></action>
 			</edit>
 		</open>
