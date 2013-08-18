@@ -51,11 +51,10 @@ $versions = array(
 			// next let's add our module
 			array('acp', 'INDEX_TABBED_TITLE', array(
 					'module_basename'	=> 'index_tabbed',
-					'modes'				=> array('setting'),
 					),
 				),
 			),
-			'cache_purge' => array('', 'template', 'theme'),
+		'cache_purge' => array('', 'template', 'theme'),
 		),
 	);
 
