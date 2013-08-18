@@ -27,7 +27,7 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>3.0.0</mod-version>
+		<mod-version>3.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>300</time>
@@ -80,21 +80,36 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 				</changelog>
 			</entry>
 			<entry>
-				<date>2013-07-20</date>
+				<date>2013-07-18</date>
 				<rev-version>3.0.0</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[Rewriting MOD]]></change>
 					<change><![CDATA[Bootstrap CSS]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2013-07-21</date>
+				<rev-version>3.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Fix errors]]></change>
+					<change><![CDATA[New ACP Settings]]></change>
+				</changelog>
+			</entry>
 		</history>
 		<link-group>
+			<link type="contrib" href="contrib/update.xml" lang="en">Update 3.0.0 to 3.0.1</link>
+			<link type="contrib" href="contrib/update.xml" lang="es">Actualizar 3.0.0 a 3.0.1</link>
 			<link type="language" href="contrib/es.xml" lang="en">Install Spanish language pack</link>
 			<link type="language" href="contrib/es.xml" lang="es">Instalar paquete del idioma español</link>
 		</link-group>
 	</header>
 	<action-group>
 		<copy>
+			<file from="root/install.php" to="install.php"/>
+			<file from="root/adm/style/acp_index_tabbed.html" to="adm/style/acp_index_tabbed.html"/>
+			<file from="root/includes/acp/acp_index_tabbed.php" to="includes/acp/acp_index_tabbed.php"/>
+			<file from="root/includes/acp/info/acp_index_tabbed.php" to="includes/acp/info/acp_index_tabbed.php"/>
+			<file from="root/language/en/mods/info_acp_index_tabbed.php" to="language/en/mods/info_acp_index_tabbed.php"/>
 			<file from="root/styles/prosilver/template/index_tabbed.html" to="styles/prosilver/template/index_tabbed.html"/>
 			<file from="root/styles/prosilver/template/viewforum_tabbed.html" to="styles/prosilver/template/viewforum_tabbed.html"/>
 			<file from="root/styles/prosilver/template/viewtopic_tabbed.html" to="styles/prosilver/template/viewtopic_tabbed.html"/>
@@ -124,8 +139,7 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 		'S_LOGIN_ACTION'			=> append_sid("{$phpbb_root_path}ucp.$phpEx", 'mode=login'),
 		'S_DISPLAY_BIRTHDAY_LIST'	=> ($config['load_birthdays']) ? true : false,
 
-		'S_INDEXTABS'				=> (isset($config['load_indextabs'])) ? $config['load_indextabs'] : false,
-		'S_MODETABS'				=> (isset($config['load_modetabs'])) ? $config['load_modetabs'] : false,
+		'S_INDEXTABS'				=> (isset($config['index_tabbed_index'])) ? $config['index_tabbed_index'] : false,
 // MOD : Index Tabbed - END]]></action>
 			</edit>
 		</open>
@@ -133,8 +147,7 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 			<edit>
 				<find><![CDATA[	'S_DISPLAY_POST_INFO'	=> ($forum_data['forum_type'] == FORUM_POST && ($auth->acl_get('f_post', $forum_id) || $user->data['user_id'] == ANONYMOUS)) ? true : false,]]></find>
 				<action type="after-add"><![CDATA[// MOD : Index Tabbed - Start
-	'S_FORUMTABS'				=> (isset($config['load_forumtabs'])) ? $config['load_forumtabs'] : false,
-	'S_MODETABS'				=> (isset($config['load_modetabs'])) ? $config['load_modetabs'] : false,
+	'S_FORUMTABS'				=> (isset($config['index_tabbed_forum'])) ? $config['index_tabbed_forum'] : false,
 // MOD : Index Tabbed - END]]></action>
 			</edit>
 		</open>
@@ -158,19 +171,8 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 			<edit>
 				<find><![CDATA[	'S_DISPLAY_POST_INFO'	=> ($topic_data['forum_type'] == FORUM_POST && ($auth->acl_get('f_post', $forum_id) || $user->data['user_id'] == ANONYMOUS)) ? true : false,]]></find>
 				<action type="after-add"><![CDATA[// MOD : Index Tabbed - Start
-	'S_TOPICTABS'				=> (isset($config['load_topictabs'])) ? $config['load_topictabs'] : false,
-	'S_MODETABS'				=> (isset($config['load_modetabs'])) ? $config['load_modetabs'] : false,
+	'S_TOPICTABS'				=> (isset($config['index_tabbed_topic'])) ? $config['index_tabbed_forum'] : false,
 // MOD : Index Tabbed - END]]></action>
-			</edit>
-		</open>
-		<open src="includes/acp/acp_board.php">
-			<edit>
-				<find><![CDATA[						'load_birthdays'		=> array('lang' => 'YES_BIRTHDAYS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),]]></find>
-				<action type="after-add"><![CDATA[// MOD : Index Tabbed - Start
-						'load_indextabs'		=> array('lang' => 'YES_INDEXTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
-						'load_forumtabs'		=> array('lang' => 'YES_FORUMTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
-						'load_topictabs'		=> array('lang' => 'YES_TOPICTABS',			'validate' => 'bool',	'type' => 'radio:yes_no', 'explain' => true),
-// MOD : Index Tabbed - End]]></action>
 			</edit>
 		</open>
 		<open src="language/en/viewtopic.php">
@@ -286,6 +288,7 @@ Topic  ~ Who is online, forum permission, Icons, login in tab mode]]></descripti
 				<action type="after-add"><![CDATA[@import url("tabs.css");]]></action>
 			</edit>
 		</open>
+		<php-installer><![CDATA[install.php]]></php-installer>
 		<diy-instructions lang="en"><![CDATA[IMPORTANT ! 
 
 #####################################################################
@@ -306,9 +309,15 @@ B) Refresh the themes :
 	B.2) Under "Style components " click on "Themes".
 	B.3) Under "Actions" click on "Refresh".
 	B.4) in the next screen, click on "Yes" ( Repeat last 2 steps to each instaled style ).
+#####################################################################
+C) Run installer
+
+	C.1) Write mydomain.com/install.php in your browser.
+	C.2) Run install.
+	C.3) Delete install.php file.
 
 #####################################################################
-C) Enjoy it !.]]></diy-instructions>
+D) Enjoy it !.]]></diy-instructions>
 		<diy-instructions lang="es"><![CDATA[IMPORTANTE ! 
 
 #####################################################################
@@ -331,6 +340,13 @@ B) Actualizar el Estilo
 	B.4) En la siguente pantalla, haga click en "SI" ( Repita los 2 últimos pasos para cada estilo Instalado ).
 
 #####################################################################
-C) Disfruten !.]]></diy-instructions>
+C) Ejecutar el instalador
+
+	C.1) Escriba midominio.com/install.php en el navegador.
+	C.2) Ejecute el instalador.
+	C.3) Elimine el archivo install.php.
+
+#####################################################################
+D) Disfruten !.]]></diy-instructions>
 	</action-group>
 </mod>

@@ -1,0 +1,42 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_INDEX_TABBED_TITLE}</h1>
+<p>{L_INDEX_TABBED_EXPLAIN}</p>
+
+
+<form id="acp_index_tabbed" method="post" action="{U_ACTION}">
+	<fieldset>
+		<legend>{L_INDEX_TABBED_CONFIG}</legend>
+		<dl>
+			<dt><label id="index_tabbed_index" for="index_tabbed_index">{L_INDEX_TABBED_INDEX}</label><br /><span>{L_INDEX_TABBED_INDEX_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="index_tabbed_index" value="1" <!-- IF INDEX_TABBED_INDEX -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="index_tabbed_index" value="0" <!-- IF not INDEX_TABBED_INDEX -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label id="index_tabbed_forum" for="index_tabbed_forum">{L_INDEX_TABBED_FORUM}</label><br /><span>{L_INDEX_TABBED_FORUM_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="index_tabbed_forum" value="1" <!-- IF INDEX_TABBED_FORUM -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="index_tabbed_forum" value="0" <!-- IF not INDEX_TABBED_FORUM -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label id="index_tabbed_topic" for="index_tabbed_topic">{L_INDEX_TABBED_TOPIC}</label><br /><span>{L_INDEX_TABBED_TOPIC_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="index_tabbed_topic" value="1" <!-- IF INDEX_TABBED_FORUM -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="index_tabbed_topic" value="0" <!-- IF not INDEX_TABBED_FORUM -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label>{L_INDEX_TABBED_VERSION_OLD}</label></dt>
+			<dd><strong>{S_VERSIONOLD}</strong></dd>
+		</dl>
+		<!-- IF S_VERSIONNEW --><dl>
+			<dt><label>{L_INDEX_TABBED_VERSION_NEW}</label></dt>
+			<dd><strong><a href="{U_VERSIONCHECK}" title="{L_MORE_INFORMATION}" style="<!-- IF S_VERSIONNEW eq S_VERSIONOLD -->color: #228822<!-- ELSE -->color: #AA0100<!-- ENDIF -->;" onclick="window.open(this.href);return false;">{S_VERSIONNEW}</a></strong></dd>
+		</dl><!-- ENDIF -->
+	</fieldset>
+
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		{S_FORM_TOKEN}
+		</p>
+	</fieldset>
+</form>
+<!-- INCLUDE overall_footer.html -->
