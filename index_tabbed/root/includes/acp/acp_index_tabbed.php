@@ -9,7 +9,7 @@ class acp_index_tabbed
 		
 		$user->add_lang('acp/common');
 		$this->tpl_name = 'acp_index_tabbed';
-		$this->page_title = $user->lang['INDEX_TABBED_MOD'];
+		$this->page_title = $user->lang['INDEX_TABBED_TITLE'];
 		
 		/*
 		* Sumbit form

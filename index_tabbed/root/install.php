@@ -35,7 +35,7 @@ $mod_name = 'INDEX_TABBED_TITLE';
 $version_config_name = 'index_tabbed_version';
 
 $versions = array(
-   // Version 3.9.1
+   // Version 3.0.1
    '3.0.1'   => array(
       // Lets add a config setting
       'config_add' => array(
