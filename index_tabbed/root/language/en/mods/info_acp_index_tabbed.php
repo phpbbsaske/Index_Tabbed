@@ -40,16 +40,16 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_INDEX_TABBED_TITLE'	=>	'Index Tabbed',
 	'INDEX_TABBED_TITLE'		=>	'Index Tabbed',
-	'INDEX_TABBED_EXPLAIN'		=>	'El MOD para cambiar el aspecto del indice de su foro!',
-	'INDEX_TABBED_CONFIG'		=>	'Configuración General',
-	'INDEX_TABBED_INDEX'		=>	'Activar Index Tabbed en el indice',
-	'INDEX_TABBED_INDEX_EXPLAIN'		=>	'Si Index Tabbed se activa en el indice y usted tiene modificaciones en el index_body, usted las perderá',
-	'INDEX_TABBED_FORUM'		=>	'Activar Index Tabbed en el foro',
-	'INDEX_TABBED_FORUM_EXPLAIN'		=>	'Habilitar o deshabilitar las solapas viendo un foro',
-	'INDEX_TABBED_TOPIC'		=>	'Activar Index Tabbed en el tema',
-	'INDEX_TABBED_TOPIC_EXPLAIN'		=>	'Habilitar o deshabilitar las solapas viendo un tema',
-	'INDEX_TABBED_VERSION_OLD'		=>	'Versión Actual del MOD:',
-	'INDEX_TABBED_VERSION_NEW'		=>	'Versión mas reciente del MOD:',
+	'INDEX_TABBED_EXPLAIN'		=>	'The MOD to change the aspects of your forum index!',
+	'INDEX_TABBED_CONFIG'		=>	'Settings',
+	'INDEX_TABBED_INDEX'		=>	'Enable Index Tabbed in the index',
+	'INDEX_TABBED_INDEX_EXPLAIN'		=>	'If Index Tabbed index is activated and you have index_body modifications, you will lose them',
+	'INDEX_TABBED_FORUM'		=>	'Enable Index Tabbed in the forum',
+	'INDEX_TABBED_FORUM_EXPLAIN'		=>	'Enable or disable browsing a forum tabs',
+	'INDEX_TABBED_TOPIC'		=>	'Enable Index Tabbed in the forum',
+	'INDEX_TABBED_TOPIC_EXPLAIN'		=>	'Enable or disable browsing a topic tabs',
+	'INDEX_TABBED_VERSION_OLD'		=>	'Current Version:',
+	'INDEX_TABBED_VERSION_NEW'		=>	'Last Version:',
 
 ));
 
