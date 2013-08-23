@@ -58,7 +58,7 @@ function subpanels_topic (p)
 
 	<ul class="nav nav-tabs">
 		<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
-		<li class="<!-- IF not S_USER_LOGGED_IN -->active<!-- ELSE --><!-- ENDIF -->" id="login-panel-tab"><a name="login" href="#login-panel-tab" onclick="subpanels_index('login-panel'); return false;"><span>{L_LOGIN}</span></a></li>
+		<li class="<!-- IF not S_USER_LOGGED_IN -->active<!-- ELSE --><!-- ENDIF -->" id="login-panel-tab"><a name="login" href="#login-panel-tab" onclick="subpanels_topic('login-panel'); return false;"><span>{L_LOGIN}</span></a></li>
 		<!-- ENDIF -->
 		<!-- IF S_DISPLAY_ONLINE_LIST -->
 		<li class="<!-- IF S_USER_LOGGED_IN -->active<!-- ELSE --><!-- ENDIF -->" id="online-panel-tab"><a name="online" href="#online-panel-tab" onclick="subpanels_topic('online-panel'); return false;"><span>{L_WHO_IS_ONLINE}</span></a></li>
